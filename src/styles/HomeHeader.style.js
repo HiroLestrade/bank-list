@@ -1,5 +1,5 @@
 import {StyleSheet} from "react-native";
-import {Colors} from '../constants/colors';
+import {COLORS} from '../constants/colors';
 
 const styles = (theme) => StyleSheet.create({
     headerContainer: {
@@ -18,7 +18,7 @@ const styles = (theme) => StyleSheet.create({
         flex: 8,
         fontSize: 30,
         fontWeight: 'bold',
-        color: Colors.title,
+        color: COLORS.title,
     },
     switch:{
         flex: 4,

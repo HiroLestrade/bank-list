@@ -1,13 +1,13 @@
 import {createStackNavigator} from '@react-navigation/stack';
+import {useSelector} from 'react-redux';
 import HomeHeader from '../components/HomeHeader';
 import BankScreen from '../screens/BankScreen';
-import BLTab from './BLTab';
+import TabNavigator from './TabNavigator';
 import {getTheme} from '../features/theme/themeSlice';
-import {useSelector} from 'react-redux';
 
 const Stack = createStackNavigator();
 
-const BLStack = () => {
+const StackNavigator = () => {
     const theme = useSelector(getTheme);
 
     const homeHeaderConfig = {
@@ -26,10 +26,10 @@ const BLStack = () => {
 
     return(
         <Stack.Navigator >
-            <Stack.Screen name="HomeScreen" component={BLTab} options={homeHeaderConfig} />
+            <Stack.Screen name="HomeScreen" component={TabNavigator} options={homeHeaderConfig} />
             <Stack.Screen name="Bank" component={BankScreen} options={banksHeaderConfig}/>
         </Stack.Navigator>
     );
 }
 
-export default BLStack;
+export default StackNavigator;

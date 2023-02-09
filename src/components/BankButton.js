@@ -1,6 +1,6 @@
 import {TouchableOpacity, Text} from 'react-native';
-import {getTheme} from '../features/theme/themeSlice';
 import {useSelector} from 'react-redux';
+import {getTheme} from '../features/theme/themeSlice';
 import styles from '../styles/BankButton.style';
 
 const BankButton = ({name, onPress}) => {    

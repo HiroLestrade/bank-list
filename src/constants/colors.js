@@ -1,4 +1,4 @@
-export const Dark = {
+export const DARK = {
     primary: '#72A684',
     secondary: '#A7D9B8',
     emph: '#fff',
@@ -7,7 +7,7 @@ export const Dark = {
     base: '#0d0d0d',
 }
 
-export const Light = {
+export const LIGHT = {
     primary: '#A7D9B8',
     secondary: '#72A684',
     base: '#fff',
@@ -16,7 +16,7 @@ export const Light = {
     emph: '#0d0d0d',
 }
 
-export const Colors = {
+export const COLORS = {
     title: "#23594A",
     shadow: "#000",
 }

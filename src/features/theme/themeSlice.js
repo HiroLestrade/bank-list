@@ -1,11 +1,11 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {Dark, Light} from '../../constants/colors';
+import {DARK, LIGHT} from '../../constants/colors';
 
 const themeSlice = createSlice({
     name: 'themes',
     initialState: {
-        theme: Light,
+        theme: LIGHT,
         lightTheme: true,
     },
     reducers: {
@@ -13,17 +13,17 @@ const themeSlice = createSlice({
             return({
                 ...state,
                 lightTheme: action.payload,
-                theme: action.payload ? Light : Dark,
+                theme: action.payload ? LIGHT : DARK,
             });
         },
         toggleTheme: (state) => {
             const newTheme = !state.lightTheme;
-            AsyncStorage.setItem('@theme', newTheme ? 'light' : 'dark');
+            AsyncStorage.setItem('@theme', newTheme ? 'LIGHT' : 'DARK');
         
             return({
                 ...state,
                 lightTheme: newTheme,
-                theme: newTheme ? Light : Dark,
+                theme: newTheme ? LIGHT : DARK,
             });
         }
     }
@@ -40,10 +40,10 @@ export const getLightTheme = (state) => state.theme.lightTheme;
 export const setInitialTheme = createAsyncThunk('themes/setInitialTheme', async (data, thunkAPI) => {
     const theme = await AsyncStorage.getItem('@theme');
     if(theme === null){        
-        await AsyncStorage.setItem('@theme', 'light');
+        await AsyncStorage.setItem('@theme', 'LIGHT');
         thunkAPI.dispatch(setTheme(true));     
      }
     else{
-        thunkAPI.dispatch(setTheme(theme === 'light' ? true : false));
+        thunkAPI.dispatch(setTheme(theme === 'LIGHT' ? true : false));
     }
 });

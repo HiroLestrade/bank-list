@@ -1,10 +1,10 @@
 import {NavigationContainer} from '@react-navigation/native';
-import BLStack from './BLStack';
+import StackNavigator from './StackNavigator';
 
 const RootNavigator = () => {
     return(
         <NavigationContainer >
-            <BLStack  />
+            <StackNavigator  />
         </NavigationContainer>
     );
 }

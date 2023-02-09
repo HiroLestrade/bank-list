@@ -1,13 +1,13 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {useSelector} from 'react-redux';
+import {Octicons} from '@expo/vector-icons';
 import Home from '../screens/Home';
 import Info from '../screens/Info';
-import {Octicons} from '@expo/vector-icons';
-import {useSelector} from 'react-redux';
 import {getTheme} from '../features/theme/themeSlice';
 
 const Tab = createBottomTabNavigator();
 
-export default function BLTab(){
+export default function TabNavigator(){
     const theme = useSelector(getTheme);
 
     const tabOptions = {

@@ -1,9 +1,9 @@
 import {TouchableOpacity, View, Text, Linking} from 'react-native';
+import {useSelector} from 'react-redux';
 import {AntDesign} from '@expo/vector-icons';
 import {getTheme} from '../features/theme/themeSlice';
-import {useSelector} from 'react-redux';
 import styles from '../styles/Info.style';
-import {GITHUB_LINK} from '../constants/urls';
+import {GITHUB_LINK} from '../constants/links';
 
 const Info = () => {
     const theme = useSelector(getTheme);

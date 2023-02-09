@@ -4,7 +4,7 @@ import store from './src/app/store';
 import { fetchBanks} from './src/features/banks/banksSlice';
 import RootNavigator from './src/navigation/RootNavigator';
 import {setInitialTheme} from './src/features/theme/themeSlice';
-import { API_BANK } from './src/constants/urls';
+import { API_BANK } from './src/constants/links';
 
 const App = () => {
   const dispatch = useDispatch();
