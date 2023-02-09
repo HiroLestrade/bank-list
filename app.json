@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "bank-list",
+    "slug": "bank-list",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/bank-list-logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/bank-list-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/bank-list-logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.hles2078.banklist"
+    },
+    "web": {
+      "favicon": "./assets/bank-list-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7f2c42d6-e1bd-42c2-84e9-93d6723e5fbb"
+      }
+    }
+  }
+}
