@@ -13,18 +13,19 @@ export default function BLTab(){
     const tabOptions = {
         headerShown: false,
         tabBarStyle: {
-            height: 65,
+            height: 85,
         },
     };
     
     const tabIconOptions = (icon) => ({
         tabBarIcon: ({color}) => <Octicons name={icon} size={30} color={color} />,
-        tabBarActiveTintColor: theme.secondary,
+        tabBarActiveTintColor: theme.emph,
         tabBarInactiveTintColor: theme.base,
         tabBarStyle: {
             backgroundColor: theme.primary,
-            height: "9%",
+            height: "10%",
             paddingBottom: "2%",
+            paddingTop: 8,
         }
     });
 

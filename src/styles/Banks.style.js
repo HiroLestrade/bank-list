@@ -46,10 +46,10 @@ const styles = (theme) => {return StyleSheet.create({
         backgroundColor: theme.mid, 
         borderRadius: 10, 
         padding: 10, 
-        width: "30%", 
+        width: "35%", 
         color: 
-        theme.base,
-
+        theme.text,
+        fontWeight: 'bold',
         shadowColor: "#000",
       shadowOffset: { 
         width: 3, 
@@ -67,7 +67,8 @@ const styles = (theme) => {return StyleSheet.create({
     },
     description:{
         ...globalStyles.text, 
-        color: theme.base,
+        color: theme.text,
+        fontWeight: 'bold',
     }
 })};
 

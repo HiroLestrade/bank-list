@@ -1,9 +1,9 @@
 import {TouchableOpacity, Text} from 'react-native';
 import {getTheme} from '../features/theme/themeSlice';
 import {useSelector} from 'react-redux';
-import styles from '../styles/BLButton.style';
+import styles from '../styles/BankButton.style';
 
-const BLButton = ({name, onPress}) => {    
+const BankButton = ({name, onPress}) => {    
     const theme = useSelector(getTheme);
 
     return(
@@ -15,4 +15,4 @@ const BLButton = ({name, onPress}) => {
     );
 }
 
-export default BLButton;
+export default BankButton;

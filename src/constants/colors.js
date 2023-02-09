@@ -1,20 +1,22 @@
 export const Dark = {
-    primary: '#0e614d',
-    secondary: '#11b989',
+    primary: '#72A684',
+    secondary: '#A7D9B8',
     emph: '#fff',
-    mid: '#6f6f6f',
+    mid: '#89878A',
+    text: '#D9D9D9',
     base: '#0d0d0d',
 }
 
 export const Light = {
-    primary: '#11b989',
-    secondary: '#0e614d',
+    primary: '#A7D9B8',
+    secondary: '#72A684',
     base: '#fff',
-    mid: '#6f6f6f',
+    mid: '#D9D9D9',
+    text: '#89878A',
     emph: '#0d0d0d',
 }
 
 export const Colors = {
-    title: "#fff",
-    shadow: "#000"
+    title: "#23594A",
+    shadow: "#000",
 }
